@@ -1,0 +1,9 @@
+body {
+  background: url(../img/desktop-from-above.jpg);
+}
+.register-form-wrapper, .login-form-wrapper {
+    background-color: rgba(255, 255, 255, .9);
+    padding: 1em;
+    margin-top: 50%;
+    transform: translateY(-25%);
+}
