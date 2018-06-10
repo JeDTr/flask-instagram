@@ -1,0 +1,47 @@
+nav.header-nav {
+    height: 75px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dadada;
+}
+body {
+    background-color: #fafafa;
+}
+#logo {
+    display: block;
+    background-image: url(../img/icons.png);
+    height: 35px;
+    width: 176px;
+    background-position: -177px -264px;
+    background-repeat: no-repeat;
+}
+a#add-button {
+    background-position: 46px 364px;
+    display: inline-block;
+    margin-right: 30px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons.png);
+}
+a#friends-zone {
+    background-position: -478px -500px;
+    display: inline-block;
+    margin-right: 30px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons.png);
+}
+a#notifications {
+    background-position: -52px -531px;
+    display: inline-block;
+    margin-right: 30px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons.png);
+}
+a#profile {
+    background-position: -348px -500px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons.png);
+}

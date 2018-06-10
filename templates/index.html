@@ -26,6 +26,19 @@
           {% endif %}
         </div>
         <div class="form-group">
+          {{ registration_form.fullname.label }}
+          {% if registration_form.fullname.errors %}
+            {{ registration_form.fullname(class="form-control form-control-lg is-invalid") }}
+            <div class="invalid-feedback">
+              {% for error in registration_form.fullname.errors %}
+                <span>{{ error }}</span>
+              {% endfor %}
+            </div>
+          {% else %}
+            {{ registration_form.fullname(class="form-control form-control-lg")}}
+          {% endif %}
+        </div>
+        <div class="form-group">
           {{ registration_form.email.label }}
           {% if registration_form.email.errors %}
             {{ registration_form.email(class="form-control is-invalid")}}
@@ -71,7 +84,7 @@
     </div>
     <div class="login-form-wrapper">
       <h2 class="text-center">Log In</h2>
-      <form class="register-form">
+      <form class="login-form" action="" method="POST">
         {{ login_form.hidden_tag() }}
         <div class="form-group">
           {{ login_form.email.label }}

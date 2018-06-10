@@ -1,5 +1,24 @@
-{% extends 'layout.html' %}
+{% extends 'layout_authenticated.html' %}
 
-{% block content %}
-<h2>This is your dashboard</h2>
-{% endblock content %}
+{% block style %}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static', filename='css/dashboard.css')}}">
+{% endblock style %}
+
+{% block main %}
+<div class="container">
+  <div id="main-content" class="row">
+    <div class="posts-area col-md-8 mt-4">
+      <div class="col-md-12 bg-white round">
+        <h2>This is the posts area</h2>
+      </div>
+    </div>
+    <div class="stories-area col-md-4 mt-4">
+      <div class="col-md-12 bg-white round">
+        <h2>This is the stories area</h2>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock main %}

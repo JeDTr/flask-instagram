@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block style %}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static', filename='css/layout_authenticated.css')}}">
+{% endblock style %}
+
+{% block content %}
+{% include 'header.html' %}
+
+{% block main %}
+{% endblock main %}
+
+{% endblock content %}

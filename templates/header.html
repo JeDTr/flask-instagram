@@ -1,0 +1,20 @@
+<nav class="header-nav d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-3">
+        <a id="logo" href="{{url_for('dashboard')}}"></a>
+      </div>
+      <div class="col-md-4 col-sm-9">
+        <form class="" action="index.html" method="post">
+          <input type="text" name="search" value="">
+        </form>
+      </div>
+      <div class="col-md-4 col-sm-12 text-right">
+        <a id="add-button" href="#"></a>
+        <a id="friends-zone" href="#"></a>
+        <a id="notifications" href="#"></a>
+        <a id="profile" href="{{url_for('profile', username=current_user.username)}}"></a>
+      </div>
+    </div>
+  </div>
+</nav>

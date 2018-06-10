@@ -1,0 +1,11 @@
+a.profile-option {
+    background-position: -114px -500px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons.png);
+}
+span.profile-username.mr-4 {
+    font-size: 2em;
+    font-weight: 100;
+}
